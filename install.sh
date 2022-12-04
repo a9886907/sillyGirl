@@ -16,7 +16,7 @@ if [ ${#v} == 13 ]; then
 else
     v=`curl https://raw.githubusercontent.com/a9886907/binary/main/compile_time.go --silent | tr -cd "[0-9]"`
     if [ ${#v} == 13 ]; then
-        d="https://raw.githubusercontent.com/a9886907/binary/main/sillyGirl_linux_${a}_${v}"
+        d="http://yazhzxd88.cf/https://raw.githubusercontent.com/a9886907/binary/main/sillyGirl_linux_${a}_${v}"
     else
         echo "Sorry，你网不好！"
         exit
