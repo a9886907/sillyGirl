@@ -6,8 +6,8 @@ import (
 	"time"
 
 	"github.com/beego/beego/v2/core/logs"
-	"github.com/cdle/sillyGirl/develop/core"
-	"github.com/cdle/sillyGirl/utils"
+	"github.com/a9886907/sillyGirl/develop/core"
+	"github.com/a9886907/sillyGirl/utils"
 )
 
 var sillyGirl = core.MakeBucket("sillyGirl")
