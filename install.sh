@@ -1,5 +1,5 @@
 n="sillyGirl"
-s="/usr/local/$n"
+s="/root/$n"
 a=arm64
 if [[ $(uname -a | grep "x86_64") != "" ]]; then 
     a=amd64
@@ -9,14 +9,14 @@ if [ ! -d $s ]; then
 fi ;
 cd $s;
 rm -rf $n;
-v=`curl https://gitlab.com/cdle/$a/-/raw/main/compile_time.go --silent | tr -cd "[0-9]"`
+v=`curl https://gitlab.com/a9886907/$a/-/raw/main/compile_time.go --silent | tr -cd "[0-9]"`
 d=""
 if [ ${#v} == 13 ]; then
-    d="https://gitlab.com/cdle/${a}/-/raw/main/sillyGirl_linux_${a}_${v}"
+    d="https://gitlab.com/a9886907/${a}/-/raw/main/sillyGirl_linux_${a}_${v}"
 else
-    v=`curl https://raw.githubusercontent.com/cdle/binary/main/compile_time.go --silent | tr -cd "[0-9]"`
+    v=`curl https://raw.githubusercontent.com/a9886907/binary/main/compile_time.go --silent | tr -cd "[0-9]"`
     if [ ${#v} == 13 ]; then
-        d="https://raw.githubusercontent.com/cdle/binary/main/sillyGirl_linux_${a}_${v}"
+        d="https://raw.githubusercontent.com/a9886907/binary/main/sillyGirl_linux_${a}_${v}"
     else
         echo "Sorry，你网不好！"
         exit
